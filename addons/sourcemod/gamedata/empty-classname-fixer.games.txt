@@ -10,13 +10,6 @@
 				"windows"   "\x55\x8B\xEC\xB8\x0C\x18\x00\x00"
 				"linux"     "@_Z21MapEntity_ParseEntityRP11CBaseEntityPKcP16IMapEntityFilter"
 			}
-
-			// search string: "classname missing from entity!"
-			"MapEntity_PrecacheEntity"
-			{
-				"windows"   "\x55\x8B\xEC\x81\xEC\x0C\x08\x00\x00\x8B\x45"
-				"linux"     "@_Z24MapEntity_PrecacheEntityPKcRi"
-			}
 		}
 
 		"MemPatches"
@@ -68,26 +61,6 @@
 
 					"patch"     "\x56\x57\x8B\x75\x08\x89\x06\xEB\x27"
 				}
-			}
-
-			"MapEntity_PrecacheEntity::SkipError"
-			{
-				"signature" "MapEntity_PrecacheEntity"
-
-				"linux"
-				{
-					"offset"    "80h"
-					"verify"    "\xC7"
-					"patch"     "\xEB\xE1"
-				}
-
-				"windows"
-				{
-					"offset"    "32h"
-					"verify"    "\x68" // 10181b62 68 a8 cd    PUSH   s_classname_missing_from_entity!_103ecda8
-					"patch"     "\xEB\x56" // jmp to exit
-				}
-
 			}
 		}
 	}
