@@ -14,10 +14,10 @@ bhop_dron.bsp
 bhop_ins_fy_snow5.bsp
 bhop_ins_fy_snow9.bsp
 bhop_ins_fy_snow10.bsp
-bhop_splrez.bsp
 bhop_narkozzz.bsp
 bhop_p06_norng.bsp
 bhop_panda.bsp
+bhop_splrez.bsp
 kz_bhop_smallblocks.bsp
 xc_blizzard.bsp
 ```
