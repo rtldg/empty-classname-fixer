@@ -16,6 +16,8 @@ xc_blizzard.bsp
 
 ![Error box message that says "classname missing from entity!"](classname_missing_from_entity_error_box.png)
 
+apparently this is caused by stripper:source https://github.com/alliedmodders/stripper-source/issues/14
+
 requires sourcescramble https://github.com/nosoop/SMExt-SourceScramble
 - sourcescramble_manager.sp/.smx
 - sourcescramble.ext.dll/.so
